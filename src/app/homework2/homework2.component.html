@@ -1,0 +1,40 @@
+<h2>You can choose any two of them</h2>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" [(ngModel)]="Eggs">
+  <label class="form-check-label" for="defaultCheck1">
+    Eggs
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" [(ngModel)]="Beef">
+  <label class="form-check-label" for="defaultCheck2">
+    Beef
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" [(ngModel)]="Chicken">
+  <label class="form-check-label" for="defaultCheck3">
+    Chicken
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" [(ngModel)]="Rice">
+  <label class="form-check-label" for="defaultCheck4">
+    Rice
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck5" [(ngModel)]="Toast">
+  <label class="form-check-label" for="defaultCheck5">
+    Toast
+  </label>
+</div>
+
+<br>
+<button class="btn btn-primary" (click)="cook()" style="margin-right: 10px"> Start Cooking </button>
+
+<hr>
+<div *ngIf="isCook" class="informBoxBoarder"> {{result}} </div>
+<span><img *ngIf='isPic' src="{{src}}" style="width: 300px; height: 300px"></span>
+
